@@ -39,13 +39,13 @@ const features = [
 
 export function FeaturesGrid() {
   return (
-    <div id='features' className="py-24 h-screen bg-gradient-to-b from-background/50 to-background">
+    <div id='features' className="py-24 h-screen bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-center mb-4"
+          className="text-3xl md:text-4xl font-bold text-center mb-4 text-white"
         >
           Elevate your SEO efforts.
         </motion.h2>
@@ -53,7 +53,7 @@ export function FeaturesGrid() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-xl text-muted-foreground text-center mb-16 max-w-2xl mx-auto"
+          className="text-xl text-gray-300 text-center mb-16 max-w-2xl mx-auto"
         >
           Harness the power of AI, making search engine optimization intuitive and effective for all skill levels.
         </motion.p>

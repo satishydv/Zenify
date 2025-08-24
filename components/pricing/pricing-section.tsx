@@ -45,7 +45,7 @@ const plans = [
 
 export function PricingSection() {
   return (
-    <section id='price' className="py-24 bg-gradient-to-b from-background/50 to-background">
+    <section id='price' className="py-24 bg-gradient-to-b from-gray-900 to-black">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -53,8 +53,8 @@ export function PricingSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-6xl  font-bold mb-4">Pricing</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-6xl  font-bold mb-4 text-white">Pricing</h2>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Choose the right plan to meet your SEO needs and start optimizing today.
           </p>
         </motion.div>

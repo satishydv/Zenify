@@ -50,7 +50,7 @@ const footerLinks = {
 
 export function FooterSection() {
   return (
-    <footer className="bg-background border-t border-border/50">
+    <footer className="bg-black border-t border-gray-800/50">
       <div className="container mx-auto px-4 py-16">
         {/* Newsletter Section */}
         <div className="text-center mb-16">
@@ -58,7 +58,7 @@ export function FooterSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-3xl md:text-4xl font-bold mb-4 text-white"
           >
             AI-Driven SEO For Everyone.
           </motion.h2>
@@ -73,11 +73,11 @@ export function FooterSection() {
               <Input
                 type="email"
                 placeholder="Your email"
-                className="bg-background/50"
+                className="bg-gray-800/50 border-gray-700 text-white placeholder-gray-400"
               />
               <Button>Join Waitlist</Button>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-gray-400">
               No credit card required · 7-days free trial
             </p>
           </motion.div>
@@ -93,7 +93,7 @@ export function FooterSection() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <h3 className="font-semibold mb-4">{section.title}</h3>
+              <h3 className="font-semibold mb-4 text-white">{section.title}</h3>
               <div className="space-y-2">
                 {section.links.map((link) => (
                   <FooterLink key={link.label} href={link.href}>
@@ -106,10 +106,10 @@ export function FooterSection() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-border/50">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800/50">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <Zap className="w-8 h-8 text-purple-500" />
-            <span className="text-sm text-muted-foreground">
+            <span className="text-sm text-gray-400">
               © 2024 Your Company, Inc.
             </span>
           </div>

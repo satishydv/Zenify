@@ -20,7 +20,7 @@ export function PricingCard({ title, price, features, isPopular, delay = 0 }: Pr
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
       className={`relative p-6 rounded-xl backdrop-blur-sm border ${
-        isPopular ? 'bg-purple-900/20 border-purple-500/50' : 'bg-card/50 border-border/50'
+        isPopular ? 'bg-purple-900/20 border-purple-500/50' : 'bg-gray-800/50 border-gray-700/50'
       }`}
     >
       {isPopular && (
@@ -31,20 +31,20 @@ export function PricingCard({ title, price, features, isPopular, delay = 0 }: Pr
         </div>
       )}
 
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
       <div className="mb-6">
-        <span className="text-3xl font-bold">$</span>
-        <span className="text-3xl font-bold">
+        <span className="text-3xl font-bold text-white">$</span>
+        <span className="text-3xl font-bold text-white">
           <PriceCounter value={price} />
         </span>
-        <span className="text-muted-foreground">/mo</span>
+        <span className="text-gray-300">/mo</span>
       </div>
 
       <ul className="space-y-3 mb-6">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center gap-2">
             <Check className="h-5 w-5 text-green-500" />
-            <span>{feature}</span>
+            <span className="text-white">{feature}</span>
           </li>
         ))}
       </ul>
