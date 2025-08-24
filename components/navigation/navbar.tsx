@@ -24,7 +24,7 @@ export function Navbar() {
               className="flex items-center gap-2"
             >
               <Zap className="w-8 h-8 text-purple-500" />
-              <span className="font-bold text-xl">ZenOps</span>
+              <span className="font-bold text-xl">ZenIfy</span>
             </motion.div>
           </Link>
 

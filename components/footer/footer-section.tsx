@@ -110,7 +110,7 @@ export function FooterSection() {
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <Zap className="w-8 h-8 text-purple-500" />
             <span className="text-sm text-gray-400">
-              © 2024 Your Company, Inc.
+              © 2025 Your Company, Inc.
             </span>
           </div>
           <div className="flex gap-6">

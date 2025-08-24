@@ -7,7 +7,7 @@ import { Navbar } from '@/components/navigation/navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Modern Web Solutions',
+  title: 'ZenIfy',
   description: 'Building the future of web development',
 };
 
